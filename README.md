@@ -45,6 +45,8 @@ Only `websiteId` and `scriptUrl` are mandatory. See the [Umami docs](https://uma
 
 ## Usage
 
+### In a component
+
 ```javascript
 
 // Sends an event with an event type of custom.
@@ -57,6 +59,13 @@ this.$umami.trackEvent('Signup button click', 'signup')
 // track a page view
 this.$umami.trackView(url, [referrer], [website_id])
 
+```
+
+### in asyncData, or middleware etc, you can use $umami from Nuxt context, for example:
+```javascript
+export default ({ route, $umami }) => {
+    $umami.trackView(route.fullPath)
+}
 ```
 
 All functions defined [in the Umami docs](https://umami.is/docs/tracker-functions) are available,
