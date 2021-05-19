@@ -1,0 +1,20 @@
+{
+  "name": "nuxt-umami-module",
+  "keywords": ["nuxt", "umami", "vue", "module", "analytics"],
+  "version": "1.0.0",
+  "main": "src/module.js",
+  "types": "types/index.d.ts",
+  "license": "MIT",
+  "description": "Embed the Umami analytics library into Nuxt as `this.$umami`",
+  "repository": "https://github.com/joe-pritchard/nuxt-umami-module",
+  "author": "Joe Pritchard",
+  "private": false,
+  "dependencies": {},
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.1.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "prettier": "^1.16.4"
+  }
+}
